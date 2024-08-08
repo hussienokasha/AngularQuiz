@@ -1,0 +1,24 @@
+<div class="container">
+
+<button class="border-0 pi pi-arrow-left bg-primary p-2 rounded-circle mt-5 text-white" routerLink="/dashboard"></button>
+  <div class="card shadow-lg border-0 rounded-4 mt-5 m-auto" style="max-width: 350px;">
+    <div class="d-flex justify-content-center p-4 bg-primary-gradient position-relative mt-3">
+      <img
+        src="{{ userData.avatar }}"
+        class="rounded-circle border border-4 border-light shadow-sm position-absolute"
+        alt="User Image"
+        width="120px"
+        height="120px"
+        style="top: -60px;"
+      />
+    </div>
+    <div class="card-body text-center pt-5">
+      <h5 class="card-title fw-bold text-primary">
+        {{ userData.first_name }} {{ userData.last_name }}
+      </h5>
+      <p class="text-muted mb-2">{{ userData.email }}</p>
+      <p class="card-text text-secondary">User ID: <span class="fw-semibold">{{ userData.id }}</span></p>
+    </div>
+
+  </div>
+</div>

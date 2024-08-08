@@ -1,0 +1,11 @@
+<nav class=" bg-secondary-subtle">
+  <div class="container d-flex  justify-content-between py-2">
+    <button type="button" class="btn btn-primary btn-sm" routerLink="/dashboard">Home</button>
+    <div class="search">
+      <p-floatLabel>
+        <input id="username" type="text" pInputText  (input)="updateSearch($event)" />
+        <label for="username">Search for user</label>
+    </p-floatLabel>
+    </div>
+  </div>
+</nav>
